@@ -1,0 +1,32 @@
+background
+{
+    font-family:'Roboto', sabs-serif;
+    padding:0;
+    margin:0;
+}
+
+img { 
+    width: 100%
+}
+
+@mixin center-grid {
+    display: grid;
+    align-items: center;
+    width: 100%;
+}
+
+body {
+    @include center-grid();
+    #header-container {
+            @include center-grid();
+            grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
+            min-height: 10vh;
+    }
+
+#footer-container {
+    @include center-grid();
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 10vh;
+    }
+
+}
